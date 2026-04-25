@@ -1,0 +1,26 @@
+{
+  "name": "zap-shift-client",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-hook-form": "^7.73.1",
+    "react-router": "^7.14.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.1.8",
+    "@vitejs/plugin-react": "^4.3.4",
+    "daisyui": "5.5.19",
+    "eslint": "^9.0.0",
+    "tailwindcss": "4.1.8",
+    "vite": "^6.3.5"
+  }
+}

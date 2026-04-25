@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+
+   /* High-action color (Buttons, Call to Action) */
+    --color-primary: #A47251; 
+    
+    /* Secondary actions (Status badges, secondary buttons) */
+    --color-secondary: #DD9E59;
+    
+    /* Highlights (Selection markers, promotions) */
+    --color-accent: #F0D8A1;
+    
+    /* Background surfaces or Card headers */
+    --color-neutral: #DCF0C3; /* Switched to a darker tone for better readability */
+    
+    /* Optional: Ensure the background stays clean */
+    --color-base-100: #FFFFFF;
+}
+
+
+body{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
