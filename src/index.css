@@ -6,16 +6,16 @@
     default: true;
 
    /* High-action color (Buttons, Call to Action) */
-    --color-primary: #A47251; 
+    --color-primary: #1F6F5F; 
     
     /* Secondary actions (Status badges, secondary buttons) */
-    --color-secondary: #DD9E59;
+    --color-secondary: #2FA084;
     
     /* Highlights (Selection markers, promotions) */
-    --color-accent: #F0D8A1;
+    --color-accent: #6FCF97;
     
     /* Background surfaces or Card headers */
-    --color-neutral: #DCF0C3; /* Switched to a darker tone for better readability */
+    --color-neutral: #EEEEEE; /* Switched to a darker tone for better readability */
     
     /* Optional: Ensure the background stays clean */
     --color-base-100: #FFFFFF;

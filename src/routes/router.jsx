@@ -5,6 +5,7 @@ import Services from "../pages/Services/Services";
 import AuthLayout from "../Layout/AuthLayout";
 import Login from "../pages/Auth/Login/Login";
 import Register from "../pages/Auth/Register/Register";
+import PrivateRoutes from "./privateRoutes";
 
 
  const router = createBrowserRouter([
@@ -18,7 +19,9 @@ import Register from "../pages/Auth/Register/Register";
             },
             {
                 path:'service',
-                Component:Services
+                element:<PrivateRoutes>
+                    <Services></Services>
+                    </PrivateRoutes>
             }
         ]
     },
