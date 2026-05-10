@@ -2,10 +2,14 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../hooks/useAuth';
 import axios from 'axios';
+import { useLocation, useNavigate } from 'react-router';
 
 const Register = () => {
     const { register, formState: errors, handleSubmit } = useForm();
     const { registerUser, updateProfileInfo } = useAuth()
+    const navigator = useNavigate()
+    const location = useLocation()
+    console.log(location)
     const handleRegister = (data) => {
         const profileImg = data.photo[0];
         registerUser(data.email, data.password)
@@ -28,6 +32,7 @@ const Register = () => {
                             updateProfileInfo(updateInfo)
                                 .then(()=>{
                                     console.log("Successfully Registered")
+                                    navigator(location.state || '/')
                                 })
                                 .catch(err => console.log(err))
                         })

@@ -6,6 +6,7 @@ import AuthLayout from "../Layout/AuthLayout";
 import Login from "../pages/Auth/Login/Login";
 import Register from "../pages/Auth/Register/Register";
 import PrivateRoutes from "./privateRoutes";
+import SendParcel from "../pages/sendParcel/SendParcel";
 
 
  const router = createBrowserRouter([
@@ -22,6 +23,11 @@ import PrivateRoutes from "./privateRoutes";
                 element:<PrivateRoutes>
                     <Services></Services>
                     </PrivateRoutes>
+            },
+            {
+                path:'sendparcel',
+                loader:()=> fetch('/region.json').then(res => res.json()) ,
+                element:<SendParcel></SendParcel>
             }
         ]
     },

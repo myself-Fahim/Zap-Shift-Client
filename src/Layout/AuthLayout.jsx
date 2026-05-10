@@ -9,12 +9,12 @@ const AuthLayout = () => {
         <>
             <Navbar></Navbar>
 
-            <div className='grid grid-cols-2 h-screen'>
+            <div className='grid grid-cols-1 md:grid-cols-2 h-screen'>
                 <div className='flex-1'>
                     <Outlet></Outlet>
                 </div>
 
-                <div className=' bg-secondary  '>
+                <div className=' bg-secondary hidden md:grid '>
                     <div className='flex justify-center items-center h-full'>
                          <img className='text-primary' src={authimg} alt="" />
                     </div>

@@ -1,25 +1,29 @@
-import React  from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
-import { Link, useLocation } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import AuthContext from '../../../context/AuthContext/AuthContext';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
 
     const { register, handleSubmit, setValue, formState: { errors } } = useForm()
-    const {  SignInGoogle,  SignInUser} = useAuth()
-     const location = useLocation()
-        console.log(location)
-    const handleForm = (data) => {
-        SignInUser(data.email,data.password)
-        .then(res => console.log(res.user))
-        .catch(err => console.log(err))
+    const { SignInGoogle, SignInUser } = useAuth()
+    const navigator = useNavigate()
+    const location = useLocation()
+    console.log(location)
 
-       
-       
+
+
+
+    const handleForm = (data) => {
+        SignInUser(data.email, data.password)
+            .then(res => {
+                navigator(location.state || '/')
+            })
+            .catch(err => console.log(err))
     }
 
-  
+
     const fillAdmin = () => {
         setValue('email', 'admin123@gmail.com')
         setValue('password', '123456Aa')
@@ -35,7 +39,9 @@ const Login = () => {
 
     const googleLogin = () => {
         SignInGoogle()
-            .then(res => console.log(res.user))
+            .then(res => {
+                navigator(location.state || '/' )
+            })
             .catch(err => console.log(err))
     }
 
@@ -44,7 +50,7 @@ const Login = () => {
         <div className='h-full'>
             <form onSubmit={handleSubmit(handleForm)} className=' h-full flex items-center'>
                 <fieldset className="fieldset w-[50%] mx-auto ">
-                     <h1 className='text-3xl font-bold text-center mb-1'>Welcome Back</h1>
+                    <h1 className='text-3xl font-bold text-center mb-1'>Welcome Back</h1>
                     <h1 className='text-xl font-bold text-center text-primary mb-5'>Login To Your Account </h1>
                     {/* Email Field */}
                     <label className="label text-primary">Email</label>
@@ -77,7 +83,7 @@ const Login = () => {
 
                     {/* Buttons */}
                     <button className="btn w-full mt-4 bg-primary text-white rounded-xl hover:transition hover:duration-500 hover:ease-in-out hover:scale-103 ">Login</button>
-                    <button type='button'  onClick={googleLogin} className="btn bg-white w-full mt-4 flex items-center justify-center gap-2">
+                    <button type='button' onClick={googleLogin} className="btn bg-white w-full mt-4 flex items-center justify-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
                             <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
                             <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
@@ -87,7 +93,7 @@ const Login = () => {
                         Log in with Google
                     </button>
 
-                    <p className='mt-2 text-center'>Don't have any account? <span className='underline'><Link to='/register'>Register Here</Link></span></p>
+                    <p className='mt-2 text-center'>Don't have any account? <span className='underline'><Link to='/register' state={location.state}>Register Here</Link></span></p>
                 </fieldset>
             </form>
 

@@ -1,0 +1,88 @@
+[
+  {
+    "district": "Dhaka",
+    "urban_areas": [
+      "Gulshan", "Banani", "Baridhara", "Bashundhara R/A", "Uttara", "Mirpur", 
+      "Dhanmondi", "Mohammadpur", "Motijheel", "Khilgaon", "Rampura", "Badda", 
+      "Farmgate", "Tejgaon", "Old Dhaka", "Paltan", "Malibagh", "Nikunja"
+    ]
+  },
+  {
+    "district": "Chattogram",
+    "urban_areas": [
+      "Agrabad", "Nasirabad", "Halishahar", "Panchlaish", "Chawkbazar", 
+      "Khulshi", "Kotwali", "Bakalia", "Pahartali", "Patenga", "Chandgaon", 
+      "Lalkhan Bazar", "Jamalkhan", "Andarkilla", "Muradpur"
+    ]
+  },
+  {
+    "district": "Gazipur",
+    "urban_areas": [
+      "Tongi", "Chowrastha", "Joydebpur", "Konabari", "Board Bazar", 
+      "Salna", "Kashimpur", "Pubail", "Mouchak", "Vawaler Garh"
+    ]
+  },
+  {
+    "district": "Narayanganj",
+    "urban_areas": [
+      "Chashara", "Siddhirganj", "Fatullah", "Kanchpur", "Adamjee", 
+      "Madanpur", "Paikpara", "Netaiganj", "Baburail"
+    ]
+  },
+  {
+    "district": "Sylhet",
+    "urban_areas": [
+      "Zindabazar", "Ambarkhana", "Uposhahar", "Kumarpara", "Pathantula", 
+      "Subidbazar", "Kadamtali", "Bagbari", "Shibganj", "Moulvibazar Road"
+    ]
+  },
+  {
+    "district": "Khulna",
+    "urban_areas": [
+      "Boyra", "Sonadanga", "Khalishpur", "Daulatpur", "Nirala", 
+      "Gollamari", "Tutpara", "Moylapota", "Shibbari", "Khan Jahan Ali"
+    ]
+  },
+  {
+    "district": "Rajshahi",
+    "urban_areas": [
+      "Shaheb Bazar", "Motihar", "Boalia", "Rajpara", "Sopura", 
+      "Kazla", "Talaimari", "Upashahar", "Binodpur"
+    ]
+  },
+  {
+    "district": "Cumilla",
+    "urban_areas": [
+      "Kandirpar", "Badurtala", "Jhautoala", "Chawkbazar", "Tomsom Bridge", 
+      "Mainamati", "Paduar Bazar", "Shashonagachha", "Dharmapur"
+    ]
+  },
+  {
+    "district": "Barishal",
+    "urban_areas": [
+      "Sadarr Road", "Natullabad", "Rupatali", "Amir Kutia", "Chowmatha", 
+      "Bottala", "Police Line", "Brown Compound"
+    ]
+  },
+  {
+    "district": "Mymensingh",
+    "urban_areas": [
+      "Ganginarpar", "Chorkhayra", "Akua", "Keatkhali", "Maskanda", 
+      "Chorpara", "Patgudam", "Brahmaputra"
+    ]
+  },
+  {
+    "district": "Rangpur",
+    "urban_areas": [
+      "Dhap", "Jahaj Company", "Modern Moar", "Check Post", "Lalbagh", 
+      "Medical Moar", "Gupta Para", "Shapla Chattar"
+    ]
+  },
+  {
+    "district": "Bogura",
+    "urban_areas": [
+      "Satmatha", "Jaleswaritola", "Chelopara", "Thanthania", "Banani Moar", 
+      "Sultanganj", "Nawabbari", "Latifpur"
+    ]
+  }
+]
